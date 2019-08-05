@@ -38,5 +38,63 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+//header
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let nav = document.querySelectorAll('a');
+nav[0].textContent = (siteContent["nav"]["nav-item-1"])
+nav[1].textContent = (siteContent["nav"]["nav-item-2"])
+nav[2].textContent = (siteContent["nav"]["nav-item-3"])
+nav[3].textContent = (siteContent["nav"]["nav-item-4"])
+nav[4].textContent = (siteContent["nav"]["nav-item-5"])
+nav[5].textContent = (siteContent["nav"]["nav-item-6"])
+
+// cta 
+let mainImg = document.querySelector("#cta-img");
+mainImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+let mainText = document.querySelector("h1");
+mainText.textContent = (siteContent["cta"]["h1"])
+
+let button = document.querySelector(".cta-text button");
+button.textContent = (siteContent["cta"]["button"])
+
+//main content
+let middleHeader = document.querySelectorAll('.top-content .text-content h4');
+middleHeader[0].textContent = (siteContent["main-content"]["features-h4"])
+middleHeader[1].textContent = (siteContent["main-content"]["about-h4"])
+
+let middleText = document.querySelectorAll('.top-content .text-content p');
+middleText[0].textContent = (siteContent["main-content"]["features-content"])
+middleText[1].textContent = (siteContent["main-content"]["about-content"])
+
+let bottomHeader = document.querySelectorAll('.bottom-content .text-content h4');
+bottomHeader[0].textContent = (siteContent["main-content"]["services-h4"])
+bottomHeader[1].textContent = (siteContent["main-content"]["product-h4"])
+bottomHeader[2].textContent = (siteContent["main-content"]["vision-h4"])
+
+let bottomText = document.querySelectorAll('.bottom-content .text-content p');
+bottomText[0].textContent = (siteContent["main-content"]["services-content"])
+bottomText[1].textContent = (siteContent["main-content"]["product-content"])
+bottomText[2].textContent = (siteContent["main-content"]["vision-content"])
+
+
+let middleImage = document.querySelector(".middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+
+//contact
+
+let contactTitle = document.querySelector(".contact h4");
+contactTitle.textContent = (siteContent["contact"]["contact-h4"])
+
+let contactText = document.querySelectorAll(".contact p");
+contactText[0].textContent = (siteContent["contact"]["address"])
+contactText[1].textContent = (siteContent["contact"]["phone"])
+contactText[2].textContent = (siteContent["contact"]["email"])
+
+//footer
+
+let footer = document.querySelector("footer p");
+footer.textContent = (siteContent["footer"]["copyright"])
