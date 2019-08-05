@@ -50,6 +50,23 @@ nav[3].textContent = (siteContent["nav"]["nav-item-4"])
 nav[4].textContent = (siteContent["nav"]["nav-item-5"])
 nav[5].textContent = (siteContent["nav"]["nav-item-6"])
 
+let newNav = document.createElement('a');
+newNav.textContent = "DOM History";
+
+let newItem = document.querySelector('nav');
+newItem.append(newNav);
+
+let newNavTwo = document.createElement('a');
+newNavTwo.textContent = "Lambda School";
+
+let newItemTwo = document.querySelector('nav');
+newItem.prepend(newNavTwo);
+
+const secondaryHeaders = document.querySelectorAll('nav a');
+secondaryHeaders.forEach(element => {
+  element.style.color = '#32a852';
+})
+
 // cta 
 let mainImg = document.querySelector("#cta-img");
 mainImg.setAttribute('src', siteContent["cta"]["img-src"])
